@@ -1,0 +1,286 @@
+%-------------------------
+% Date   : 2023-03-01
+% Author : Ignacio Gaitan
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+% Adjust section formatting
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+
+% Define custom bullet for itemize
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\LARGE Ignacio Gaitán} \\ \vspace{2ex}
+    \textit{Sr. Machine Learning Engineer} \\ \vspace{2ex}
+    \small
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/ignacio-gaitan}{LinkedIn}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:gaitan.ignacio@icloud.com}{gaitan.ignacio@icloud.com}
+    $|$
+    \faMobile \hspace{.5pt} \href{tel:+59895501231}{(+598) 95 501 231}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/gaitanignacio}{GitHub}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://gitlab.com/gaitan.ignacio}{Gitlab}
+    %$|$
+    %\faGlobe \hspace{.5pt} \href{https://gaitanignacio.github.io}{Portfolio}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Prof.+Juan+Carlos+Sabat+Pebet+1234,+11300+Montevideo,+Departamento+de+Montevideo,+Uruguay/@-34.9044985,-56.1366609,17z/data=!3m1!4b1!4m6!3m5!1s0x959f813e56b3cedd:0x5a415e79543b2770!8m2!3d-34.9044985!4d-56.134086!16s%2Fg%2F11pysbccyt?entry=ttu}{Montevideo, Uruguay}
+\end{center}
+
+\vspace{-2ex}
+
+\section*{Summary}
+Machine Learning Engineer with an academic background in Electrical Engineering, postgraduate in IT business management, with more than ten years of experience in IT companies and four years linked to teaching in different university careers. 
+Responsible, proactive and determined professional, with passion for challenges. He has great analytical and excellent communication skills. Proficient in Python, C++, and ROS, with a strong foundation in artificial intelligence. 
+Seeking opportunities to contribute in the robotics field.
+
+\section*{Skills}
+    \vspace{2pt}
+    \resumeSubHeadingListStart
+        \small{\item{
+            \textbf{Programming:}{ Python, C++, ROS, MATLAB, R, Git, Docker}  \\ \vspace{3pt}
+            \textbf{Computer Vision:}{ Object detection, instance/semantic segmentation, feature extraction, object tracking}  \\ \vspace{3pt}
+            \textbf{Machine Learning:}{ Deep learning, neural networks, TensorFlow, PyTorch, Cuda}  \\ \vspace{3pt}
+            \textbf{Robotics:}{ Robot Operating System (ROS), motion planning, control systems}  \\ \vspace{3pt}
+        }}
+    \resumeSubHeadingListEnd
+
+\section*{Professional Experience}
+    \vspace{3pt}
+    \resumeSubHeadingListStart  
+        \resumeSubheading
+            {The Walt Disney Company}{Orlando, Florida, United States (Remote contractor)}
+            {Artificial Intelligence - Sr. ML Computer Vision Engineer}{Dec 2020 \textbf{--} Present, Full-time}
+            \resumeItemListStart
+                \resumeItem{Developed computer vision algorithms to enhance photo capture experiences at Disney parks.}
+                \resumeItem{Implemented machine learning models for image recognition and object tracking.}
+                \resumeItem{Collaborated with cross-functional teams to improve image processing pipelines.}
+                \resumeItem{Utilized ROS for data capture and automation in theme park environments.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Cuti - Chamber of Uruguayan IT Companies}{Montevideo, Uruguay}
+            {IT Mentor @ Sembrando TIC program}{Sep 2019 \textbf{--} Apr 2020, Full-time}
+            \resumeItemListStart
+                \resumeItem{Mentor in the Sembrando TIC program, which aims to incremenet the opportunity to young people from vulnerable socioeconomic contexts to take their first step towards a profession in the IT industry.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Marvik AI}{Montevideo, Uruguay}
+            {Artificial Intelligence - Sr. Data Scientist}{Sep 2019 \textbf{--} Dec 2020, Full-time}
+            \resumeItemListStart
+                \resumeItem{Sr. Data Scientist at an artificial intelligence software development company that delivers innovative solutions for customers business needs.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Telefónica Móviles del Uruguay}{Montevideo, Uruguay}
+            {Machine Learing and Business Intelligence Analyst}{Dec 2016 \textbf{--} Sep 2019, Full-time}
+            \resumeItemListStart
+                \resumeItem{Responsible for analyzing data to support decision-making, development of advance analytical solutions, tools and data science applications.}
+                \resumeItem{Initially in charge of data governance of the commercial department, report automation, ETL development and DataMart design and management as well as the development of dashboards and reports for business monitoring and drawing conclusions.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Universidad Católica del Uruguay}{Montevideo, Uruguay}
+            {Professor}{Mar 2014 \textbf{--} Feb 2017, Part-time}
+            \resumeItemListStart
+                \resumeItem{Specific sciences taught Faculty of Engineering and Technologies:}
+                \resumeSubItem{Electrical Circuits} \\ \vspace{3pt}
+                \resumeSubItem{Electrical Circuits Laboratory} \\ \vspace{3pt}
+                \resumeSubItem{Physics II Laboratory} \\ \vspace{3pt}
+                \resumeSubItem{Physics I Laboratory} \\ \vspace{3pt}
+            \resumeItemListEnd
+        
+        \resumeSubheading
+            {Isbel S.A}{Montevideo, Uruguay}
+            {Account Manager}{Ago 2015 \textbf{--} Sep 2016, Full-time}
+            \resumeItemListStart
+                \resumeItem{Responsible for the commercial development of some corporate accounts in the private sector.}
+                \resumeItem{Selling solutions for different kind of technologies: Business Intelligence, Networking, Telephony, IT and Security.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Isbel S.A}{Montevideo, Uruguay}
+            {Telcos Presales Engineer}{Nov 2011 \textbf{--} Jul 2015, Full-time}
+            \resumeItemListStart
+                \resumeItem{Responsible for relationship with local and foreign partners, management of the sales process with telecommunications customers.}
+                \resumeItem{Technical presales for tailored solutions primarily for operators in Uruguay, Business proposals work out, feasibility assessment and costing for important projects.}
+                \resumeItem{Responsible for creating, maintaining and strengthening long-term relationships with customers and suppliers to promote "win win" relationships.}
+                \resumeItem{Analysis and implementation of telecommunication projects for operators in Uruguay (mainly Antel).}
+                \resumeItem{Presales in public contracts and direct purchases. Research for new partners abroad, for new solutions that meet our customers needs.}
+                \resumeItem{Working together with partners whose products are already in our portfolio.}
+            \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+
+\section*{Education}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+        \resumeEducationHeading
+            {Universidad de la República, Economics Science School}{Montevideo, Uruguay}
+            {Postgraduate in Information Systems and Business Management of IT companies; \textbf{GPA: 3.62/4.00}}{Mar 2017 \textbf{--} Dec 2017}
+            {}{}
+
+        \resumeEducationHeading
+            {Universidad Católica del Uruguay}{Montevideo, Uruguay}
+            {B.Sc. in Electrical and Electronics Engineering; \textbf{GPA: 3.62/4.00}}{Mar 2010 \textbf{--} Dec 2014}
+            {Minor Degree in Telecomunications; \textbf{GPA: 3.62/4.00}}{Mar 2015 \textbf{--} Dec 2015}
+    \resumeSubHeadingListEnd
+
+\section*{Awards \& Achievements}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      \small{\item{
+          \textbf{Scholarship for Academic Excellence:}{ A full payment Scholarship for Academic Excellence was received from the Universidad Católica del Uruguay, a Scholarship with a highly competitive 5\% admission rate. (Dec 2009)} \\ \vspace{3pt}
+  
+          \textbf{Bachelor's Graduates Ranking:}{ Earned the second-highest grade among fellow graduates in the bachelor's degree program. (Dec 2015)} \\ \vspace{3pt}
+      }}
+    \resumeSubHeadingListEnd
+
+\section*{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Luisa ROS2 Robotics Project} $|$ \emph{\href{https://gitlab.com/gaitan.ignacio/luisa-robot}{\color{blue}Gitlab}}}{}
+            \resumeItemListStart
+                \resumeItem{Advanced humanoid robot equipped with various hardware components and capable of performing human-like taks.}
+                \resumeItem{Integrated computer vision algorithms with ROS to perform object detection and tracking.}
+                \resumeItem{Integrated natural language processing algorithms with ROS to perform speech recognition and text-to-speech.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section*{Certifications}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+        \resumeOrganizationHeading
+        {DataCamp}{Jul 2018}{\href{https://www.datacamp.com/statement-of-accomplishment/course/570aea98df0efb32a187e8827252a6e45461ef1f}{Credit Risk Modeling in R}} \\ \vspace{3pt}
+        \resumeOrganizationHeading
+        {Coursera}{May 2018}{\href{https://www.coursera.org/account/accomplishments/verify/Q6FA9BCRNPDD}{Communicating Data Science Results}} \\ \vspace{3pt}
+        \resumeOrganizationHeading
+        {Coursera}{May 2018}{\href{https://www.coursera.org/account/accomplishments/verify/AWPU7U793JRS}{Practical Predictive Analytics: Models and Methods}} \\ \vspace{3pt}
+        \resumeOrganizationHeading
+        {Coursera}{May 2018}{\href{https://www.coursera.org/account/accomplishments/verify/QRZJQH9JU9XW}{Data Manipulation at Scale: Systems and Algorithms}} \\ \vspace{3pt}
+    \resumeSubHeadingListEnd
+
+\section*{Languages}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+        \small{\item{
+            \textbf{English:}{ Upper Intermediate (Professional Working)} \\ \vspace{3pt}
+            \textbf{Spanish:}{ Fluent (Native)} \\ \vspace{3pt}
+        }}
+    \resumeSubHeadingListEnd
+
+\section*{References}
+Available upon request.
+
+\end{document}
