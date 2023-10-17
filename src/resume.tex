@@ -98,7 +98,7 @@
 }
 
 
-\newcommand{\resumeOrganizationHeading}[4]{
+\newcommand{\resumeCertificationHeading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{\small #2} \\
@@ -147,9 +147,10 @@ Seeking opportunities to contribute in the robotics field.
     \vspace{2pt}
     \resumeSubHeadingListStart
         \small{\item{
-            \textbf{Programming:}{ Python, C++, ROS, MATLAB, R, Git, Docker}  \\ \vspace{3pt}
+            \textbf{Programming:}{ Python, C++, ROS, MATLAB, R, Git, SQL, NoSQL, Docker}  \\ \vspace{3pt}
+            \textbf{Cloud Infra:}{ AWS, Serverless, SageMaker, MLOps, S3, EC2, Docker}  \\ \vspace{3pt}
             \textbf{Computer Vision:}{ Object detection, instance/semantic segmentation, feature extraction, object tracking}  \\ \vspace{3pt}
-            \textbf{Machine Learning:}{ Deep learning, neural networks, TensorFlow, PyTorch, Cuda}  \\ \vspace{3pt}
+            \textbf{Machine Learning:}{ Deep learning, Neural networks, OpenCV, TensorFlow, PyTorch, Cuda}  \\ \vspace{3pt}
             \textbf{Robotics:}{ Robot Operating System (ROS), motion planning, control systems}  \\ \vspace{3pt}
         }}
     \resumeSubHeadingListEnd
@@ -249,26 +250,52 @@ Seeking opportunities to contribute in the robotics field.
 \section*{Projects}
     \vspace{3pt}
     \resumeSubHeadingListStart
+        % (TODO) ADD MISSING PROJECTS
         \resumeProjectHeading
-            {\textbf{Luisa ROS2 Robotics Project} $|$ \emph{\href{https://gitlab.com/gaitan.ignacio/luisa-robot}{\color{blue}Gitlab}}}{}
+            {\textbf{Luisa ROS2 Robotics Project} $|$ \emph{\href{https://gitlab.com/gaitan.ignacio/luisa-robot}{\color{blue}Gitlab}}}{Mar 2023}
             \resumeItemListStart
-                \resumeItem{Advanced humanoid robot equipped with various hardware components and capable of performing human-like taks.}
-                \resumeItem{Integrated computer vision algorithms with ROS to perform object detection and tracking.}
-                \resumeItem{Integrated natural language processing algorithms with ROS to perform speech recognition and text-to-speech.}
-        \resumeItemListEnd
+                \resumeItem{Advanced humanoid robot equipped with various hardware components and capable of performing human-like taks.
+                    Integrated computer vision algorithms with ROS to perform object detection and tracking. 
+                    Integrated natural language processing algorithms with ROS to perform speech recognition and text-to-speech.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Computer Vision for tracking People in Retail Store}}{Ago 2020}
+            \resumeItemListStart
+                \resumeItem{Developed a computer vision algorithm to track people in a retail store and count the number of people in the store at any given time.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Computer Vision and Edge Computing Project for Mining Safety}}{Mar 2020}
+            \resumeItemListStart
+                \resumeItem{IoT Deep Learning image classification in real time to identify truck drivers’ behaviours and send alerts to a central API if the conduct was not safe while driving.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Computer Vision for Aging People’s faces}}{Sep 2019}
+            \resumeItemListStart
+                \resumeItem{Microservice for aging people's faces leveraging StyleGAN and custom trained models to indentify the age direction in the latent space.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Default prediction}}{Sep 2017}
+            \resumeItemListStart
+                \resumeItem{Developed a machine learning model to predict the probability of default of a customer when receving a loan.}
+            \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 \section*{Certifications}
     \vspace{3pt}
     \resumeSubHeadingListStart
-        \resumeOrganizationHeading
+        % (TODO) ADD MISSING CERTIFICATIONS SPECIFICALLY ROS ONES @ UDEMY
+        \resumeCertificationHeading
+        {Synergic Partners}{Ago 2018}{Data Engineering Program - Big Data} \\ \vspace{3pt}
+        \resumeCertificationHeading
         {DataCamp}{Jul 2018}{\href{https://www.datacamp.com/statement-of-accomplishment/course/570aea98df0efb32a187e8827252a6e45461ef1f}{Credit Risk Modeling in R}} \\ \vspace{3pt}
-        \resumeOrganizationHeading
-        {Coursera}{May 2018}{\href{https://www.coursera.org/account/accomplishments/verify/Q6FA9BCRNPDD}{Communicating Data Science Results}} \\ \vspace{3pt}
-        \resumeOrganizationHeading
-        {Coursera}{May 2018}{\href{https://www.coursera.org/account/accomplishments/verify/AWPU7U793JRS}{Practical Predictive Analytics: Models and Methods}} \\ \vspace{3pt}
-        \resumeOrganizationHeading
-        {Coursera}{May 2018}{\href{https://www.coursera.org/account/accomplishments/verify/QRZJQH9JU9XW}{Data Manipulation at Scale: Systems and Algorithms}} \\ \vspace{3pt}
+        \resumeCertificationHeading
+        {Coursera | University of Washington}{May 2018}{\href{https://www.coursera.org/account/accomplishments/verify/Q6FA9BCRNPDD}{Communicating Data Science Results}} \\ \vspace{3pt}
+        \resumeCertificationHeading
+        {Coursera | University of Washington}{May 2018}{\href{https://www.coursera.org/account/accomplishments/verify/AWPU7U793JRS}{Practical Predictive Analytics: Models and Methods}} \\ \vspace{3pt}
+        \resumeCertificationHeading
+        {Coursera | University of Washington}{May 2018}{\href{https://www.coursera.org/account/accomplishments/verify/QRZJQH9JU9XW}{Data Manipulation at Scale: Systems and Algorithms}} \\ \vspace{3pt}
+        % Data Science at Scale - Capstone Project 2018 by University of Washington
+        % Data Warehousing for Business Intelligence Specialization, University of Colorado System.
     \resumeSubHeadingListEnd
 
 \section*{Languages}
@@ -279,8 +306,5 @@ Seeking opportunities to contribute in the robotics field.
             \textbf{Spanish:}{ Fluent (Native)} \\ \vspace{3pt}
         }}
     \resumeSubHeadingListEnd
-
-\section*{References}
-Available upon request.
 
 \end{document}
