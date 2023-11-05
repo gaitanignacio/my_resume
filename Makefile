@@ -13,11 +13,19 @@ LATEX = pdflatex
 # Flags for LaTeX compiler (optional, adjust as needed)
 LATEX_FLAGS = -interaction=nonstopmode
 
+OS := $(shell uname)
+macOS := Darwin
+
 # Setup
 .PHONY: setup
 setup:
+ifeq ($(OS), $(macOS))
 	brew install --cask mactex-no-gui
 	pdflatex --version
+else
+	sudo apt-get update
+	sudo apt-get install -y texlive-full
+endif
 
 # Default target: build the PDF
 .PHONY: build
