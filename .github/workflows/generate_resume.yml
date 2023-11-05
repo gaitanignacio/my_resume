@@ -20,6 +20,8 @@ jobs:
       run: |
         sudo apt-get install -y make
         make setup
+        echo "PDF_OUTPUT_NAME=resume_$(date +'%m_%Y').pdf" >> $GITHUB_ENV
+        echo ${{ env.PDF_OUTPUT_NAME }}
       shell: bash
 
     - name: Build Resume PDF
@@ -30,5 +32,5 @@ jobs:
     - name: Publish PDF as Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: resume
-        path: ${{ github.workspace }}/build/$(TEX_SOURCE)_$(CURRENT_DATE).pdf
+        name: ${{ env.PDF_OUTPUT_NAME }}
+        path: ${{ github.workspace }}/build/${{ env.PDF_OUTPUT }} # Path to the PDF file
